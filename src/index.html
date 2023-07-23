@@ -31,7 +31,7 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <div class="l-header p-header">
+  <header class="l-header p-header">
     <div class="p-header__inner">
       <h1 class="p-header__logo">
         <a href="" class="p-header__logoLink">CodeUps</a>
@@ -86,8 +86,67 @@
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 
+  <section class="l-mv p-mv">
+    <div class="p-mv__inner">
+      <div class="p-mv__header">
+        <h2 class="p-mv__title">
+          WEB<br>
+          DESIGN<br>
+          SPECIALIST
+        </h2>
+        <p class="p-mv__subtitle">
+          お客様の夢を叶える<br>
+          Webサイトを制作
+        </p>
+        <div class="p-mv__btn">
+          <a href="#" class="c-mv-btn">CONTACT</a>
+        </div>
+      </div>
+      <div class="p-mv__scroll"><span>SCROLL</span></div>
+    </div>
+  </section>
+
+  <section class="l-topNews p-news">
+    <div class="p-news__inner l-inner">
+      <div class="p-news__title c-section-header">
+          <h2 class="c-section-header__engtitle">news</h2>
+          <p class="c-section-header__jatitle">お知らせ</p>
+      </div>
+      <div class="p-news__items">
+        <!-- ループ処理 -->
+        <div class="p-news__item p-news-content">
+          <div class="p-news-content__meta">
+            <time datetime="2023-07-23" class="p-news-content__date" >2023.7.23</time>
+            <p class="p-news-content__category">お知らせ</p>
+          </div>
+          <div class="p-news-content__link">
+            <a href="#" class="p-news-content__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+          </div>
+        </div>
+        <!-- ループ終了 -->
+        <div class="p-news__item p-news-content">
+          <div class="p-news-content__meta">
+            <time datetime="2023-07-23" class="p-news-content__date">2023.7.23</time>
+            <p class="p-news-content__category">お知らせ</p>
+          </div>
+          <div class="p-news-content__link">
+            <a href="#" class="p-news-content__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+          </div>
+        </div>
+        <div class="p-news__item p-news-content">
+          <div class="p-news-content__meta">
+            <time datetime="2023-07-23" class="p-news-content__date">2023.7.23</time>
+            <p class="p-news-content__category">お知らせ</p>
+          </div>
+          <div class="p-news-content__link">
+            <a href="#" class="p-news-content__text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <div class="c-section-header">
       <h2 class="c-section-header__engtitle">contact</h2>
@@ -96,7 +155,7 @@
 
     <a href="" class="c-button">more</a>
 
-    <div class="l-footer p-footer">
+    <footer class="l-footer p-footer">
       <div class="p-footer__inner">
         <nav class="p-footer__nav p-footer-nav">
           <ul class="p-footer-nav__items">
@@ -113,7 +172,7 @@
           <small>&copy;CodeUps</small>
         </div>
       </div>
-    </div>
+    </footer>
 </body>
 
 </html>
