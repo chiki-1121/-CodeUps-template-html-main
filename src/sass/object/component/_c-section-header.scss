@@ -7,7 +7,7 @@
 
 .c-section-header__jatitle {
     font-size: rem(13);
-    font-weight: bold;
+    font-weight: $bold;
     letter-spacing: 0.05em;
     line-height: 1; //デザインカンプを見て調整
 
@@ -18,7 +18,7 @@
 
 .c-section-header__engtitle {
     font-size: rem(30);
-    font-weight: bold;
+    font-weight: $bold;
     letter-spacing: 0.05em;
     line-height: calc(37 / 30);
     font-family: $english-family;
