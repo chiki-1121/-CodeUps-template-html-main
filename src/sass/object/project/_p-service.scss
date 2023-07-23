@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.p-service {}
+
+.p-service__inner {}
+
+
+.p-service__title {}
+
+.c-section-header {}
+
+.c-section-header__engtitle {}
+
+.c-section-header__jatitle {}
+
+.p-service__items {
+    margin-top: rem(32);
+}
+
+.p-service__item + .p-service__item {
+    margin-top: rem(40);
+}
