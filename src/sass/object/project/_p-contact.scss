@@ -1,8 +1,12 @@
-@use "global" as *;
+@use "global"as *;
 
 .p-contact {
     padding: rem(60) 0;
     background: #F7F7F7;
+
+    @include mq('md') {
+        padding: rem(80) 0;
+    }
 }
 
 .p-contact__inner {}
