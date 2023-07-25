@@ -25,10 +25,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
     rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -192,7 +195,21 @@
     <div class="p-works__inner l-inner">
       <div class="p-works__contents">
         <div class="p-works__images">
-
+          <!-- Swiper -->
+          <div class="swiper js-works-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-works__img">
+                <img src="./assets/images/common/works_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./assets/images/common/service_1.jpg" alt="">
+              </div>
+              <div class="swiper-slide p-works__img">
+                <img src="./assets/images/common/service_2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-works-pagination"></div>
         </div>
         <div class="p-works__text-body">
           <div class="p-works__title c-section-header">
@@ -209,16 +226,6 @@
             <a href="" class="c-button">more</a>
           </div>
         </div>
-
-
-        <h3 class="p-works__subtitle">
-          <span class="p-works__yellow">サイトのゴール =</span><br class="u-mobile">
-          <span class="p-works__yellow">夢を叶えること</span>
-        </h3>
-        <div class="p-works__content">
-          
-        </div>
-
       </div>
     </div>
   </section>
