@@ -1,0 +1,53 @@
+@use "global" as *;
+
+/*wp-pagenavi base*/
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    gap: rem(10);
+    // clear: both;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(45);
+    height: rem(45);
+    border-radius: 50%;
+    background-color: #7633A4;
+    color: $white;
+    font-size: rem(20);
+    font-weight: $bold;
+    transition: 0.3s ease;
+    // border: solid 1px #e0e0d2;
+    // padding: 8px 15px;
+    // margin: 0 2px;
+    // white-space: nowrap;
+    // -moz-border-radius: 3px;
+    // -webkit-border-radius: 3px;
+    // border-radius: 3px;
+    // -webkit-transition: 0.2s ease-in-out;
+    // -moz-transition: 0.2s ease-in-out;
+    // -o-transition: 0.2s ease-in-out;
+    // transition: 0.2s ease-in-out;
+    // text-align: center;
+    // text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+    color: #4F31A5;
+    background-color: #F1EBF8cc;
+    opacity: 1;
+    // color: #FFF;
+    // background-color: #999;
+    // border-color: #999;
+}
+
+.wp-pagenavi span.current {
+    color: #4F31A5;
+    background-color: #F1EBF8cc;
+    // border-color: #66cccc;
+    // font-weight: bold;
+}
