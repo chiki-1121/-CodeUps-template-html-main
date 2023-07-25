@@ -4,10 +4,22 @@
 
 .p-works__inner {}
 
-.p-works__contents {}
+.p-works__contents {
+    @include mq('md') {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(90deg, transparent 0%, transparent 33%, #F0F0F0 33%, #F0F0F0 100%);
+        padding: rem(60) 0 rem(80);
+
+    }
+}
 
 .p-works__images {
     position: relative;
+
+    @include mq('md') {
+        width: 59.5%;
+    }
 }
 
 .p-works__text-body {
@@ -17,12 +29,24 @@
     padding-top: rem(156);
     padding-bottom: rem(60);
     margin-top: rem(-116);
+
+    @include mq('md') {
+        width: 40.5%;
+        margin-left: initial;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        background-color: transparent;
+    }
 }
 
 .p-works__title {}
 
 .p-works__text-block {
     margin-top: rem(30);
+
+    @include mq('md') {
+    }
 }
 
 .p-works__text {
