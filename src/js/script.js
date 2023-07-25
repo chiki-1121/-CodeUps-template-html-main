@@ -12,4 +12,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(".js-sp-nav").fadeIn(300);
         };
     });
+
+    //Swiper
+    var swiper = new Swiper(".js-works-swiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 });
