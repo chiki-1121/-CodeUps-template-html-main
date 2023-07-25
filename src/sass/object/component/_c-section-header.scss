@@ -28,3 +28,9 @@
         font-size: rem(36);
     }
 }
+
+.c-section-header--left {
+    @include mq('md') {
+        text-align: left;
+    }
+}
