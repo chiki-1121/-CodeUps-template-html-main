@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-page-link {}
+
+.c-page-link__inner {}
+
+.c-page-link__flex {
+    display: flex;
+    align-items: center;
+    padding: rem(15) rem(20);
+    border-top: 1px solid #B8AED5;
+    border-bottom: 1px solid #B8AED5;
+}
+
+.c-page-link__prev,
+.c-page-link__next {
+    width: 50%;
+    position: relative;
+}
+
+.c-page-link__next {}
+
+.c-page-link__archive {}
