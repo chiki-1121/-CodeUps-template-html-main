@@ -7,3 +7,11 @@
         margin-top: rem(110);
     }
 }
+
+.l-topContact--mt0 {
+    margin-top: 0;
+
+    @include mq('md') {
+        margin-top: 0;
+    }
+}
