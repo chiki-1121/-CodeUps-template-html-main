@@ -34,13 +34,15 @@ add_action( 'after_setup_theme', 'my_setup' );
  */
 function my_script_init()
 {
-	// jQueryの読み込み
+	// CSS
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', "", "1.0.1");
-	wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), '1.0.1', 'all');
-	wp_enqueue_style( 'my', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0.1', 'all' );
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array( 'jquery' ), '1.0.1', true );
-	wp_enqueue_script( 'my', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_style( 'my', get_template_directory_uri() . '/dist/assets/css/styles.css', array(), '1.0.1', 'all' );
+	wp_enqueue_style('swiper', '//cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), '1.0.1', 'all');
+	
+	// JS
+	wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.js', "", "1.0.1");
+	wp_enqueue_script( 'swiper', '//cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_script( 'my', get_template_directory_uri() . '/dist/assets/js/script.js', array( 'jquery' ), '1.0.1', true );
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
