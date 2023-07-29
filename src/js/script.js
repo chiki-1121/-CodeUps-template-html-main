@@ -20,7 +20,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //ヘッダーの高さを取得
     let headerHeight = $('.p-header').height();
     //メインビューの高さを取得
-    let height = $('.p-mv').height();
+    let height = $('.js-mv-height').height();
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > (height - headerHeight)) {
