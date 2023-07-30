@@ -9,7 +9,7 @@ $contact = esc_url(home_url('/contact/'));
 ?>
 
 <?php if (!is_page( 'contact' )):?>
-<section class="l-topContact p-contact">
+<section class="l-topContact p-contact <?php if (is_post_type_archive('recruit')){echo 'l-topContact--mt0';} ?>">
   <div class="p-contact__inner l-inner">
     <div class="p-contact__title c-section-header">
       <h2 class="c-section-header__engtitle">contact</h2>

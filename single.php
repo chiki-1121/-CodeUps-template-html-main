@@ -10,14 +10,7 @@
     </div>
 </div>
 
-<!-- パンくず -->
-<div class="c-breadcrumb">
-    <div class="l-inner">
-        <?php if (function_exists('bcn_display')) {
-            bcn_display();
-        } ?>
-    </div>
-</div>
+<?php get_template_part('breadcrumb'); ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <section class="l-single-body p-single-body">
@@ -54,7 +47,7 @@
                             </div>
                         </div>
                         <div class="c-page-link__archive">
-                            <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">NEWS一覧</a>
+                            <a href="<?php echo esc_url(home_url('/news')); ?>">NEWS一覧</a>
                         </div>
                     </div>
                 </div>
