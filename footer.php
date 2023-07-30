@@ -1,3 +1,13 @@
+  <?php
+  $home = esc_url(home_url('/'));
+  $news = esc_url(home_url('/news/'));
+  $service = esc_url(home_url('/service/'));
+  $works = esc_url(home_url('/works/'));
+  $company = esc_url(home_url('/company/'));
+  $recruit = esc_url(home_url('/recruit/'));
+  $contact = esc_url(home_url('/contact/'));
+  ?>
+
   <section class="l-topContact p-contact">
     <div class="p-contact__inner l-inner">
       <div class="p-contact__title c-section-header">
@@ -26,13 +36,13 @@
     <div class="p-footer__inner">
       <nav class="p-footer__nav p-footer-nav">
         <ul class="p-footer-nav__items">
-          <li class="p-footer-nav__item"><a href="">HOME</a></li>
-          <li class="p-footer-nav__item"><a href="">NEWS</a></li>
-          <li class="p-footer-nav__item"><a href="">SERVICE</a></li>
-          <li class="p-footer-nav__item"><a href="">WORKS</a></li>
-          <li class="p-footer-nav__item"><a href="">COMPANY</a></li>
-          <li class="p-footer-nav__item"><a href="">RECRUIT</a></li>
-          <li class="p-footer-nav__item"><a href="">CONTACT</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $home; ?>">HOME</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $news; ?>">NEWS</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $service; ?>">SERVICE</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $works; ?>">WORKS</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $company; ?>">COMPANY</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $recruit; ?>">RECRUIT</a></li>
+          <li class="p-footer-nav__item"><a href="<?php echo $contact; ?>">CONTACT</a></li>
         </ul>
       </nav>
       <div class="p-footer__copyright">

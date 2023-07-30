@@ -58,22 +58,22 @@ $contact = esc_url(home_url('/contact/'));
       <nav class="p-header__sp-nav sp-nav js-sp-nav">
         <ul class="sp-nav__items">
           <li class="sp-nav__item">
-            <a href="#">NEWS</a>
+            <a href="<?php echo $news; ?>">NEWS</a>
           </li>
           <li class="sp-nav__item">
-            <a href="#">SERVICE</a>
+            <a href="<?php echo $service; ?>">SERVICE</a>
           </li>
           <li class="sp-nav__item">
-            <a href="#">WORKS</a>
+            <a href="<?php echo $works; ?>">WORKS</a>
           </li>
           <li class="sp-nav__item">
-            <a href="#">COMPANY</a>
+            <a href="<?php echo $company; ?>">COMPANY</a>
           </li>
           <li class="sp-nav__item">
-            <a href="#">RECRUIT</a>
+            <a href="<?php echo $recruit; ?>">RECRUIT</a>
           </li>
           <li class="sp-nav__item">
-            <a href="#">CONTACT</a>
+            <a href="<?php echo $contact; ?>">CONTACT</a>
           </li>
         </ul>
       </nav>
