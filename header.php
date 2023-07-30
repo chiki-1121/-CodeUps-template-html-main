@@ -9,17 +9,17 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
-  <!-- Swiper -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
-  <!-- css -->
-  <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-  <!-- JavaScript -->
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script defer src="./assets/js/script.js"></script> -->
   <?php wp_head(); ?>
 </head>
+
+<?php
+$news = esc_url(home_url('/news/'));
+$service = esc_url(home_url('/service/'));
+$works = esc_url(home_url('/works/'));
+$company = esc_url(home_url('/company/'));
+$recruit = esc_url(home_url('/recruit/'));
+$contact = esc_url(home_url('/contact/'));
+?>
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
@@ -36,22 +36,22 @@
       <nav class="p-header__pc-nav pc-nav ">
         <ul class="pc-nav__items">
           <li class="pc-nav__item">
-            <a href="#">NEWS</a>
+            <a href="<?php echo $news; ?>">NEWS</a>
           </li>
           <li class="pc-nav__item">
-            <a href="#">SERVICE</a>
+            <a href="<?php echo $service; ?>">SERVICE</a>
           </li>
           <li class="pc-nav__item">
-            <a href="#">WORKS</a>
+            <a href="<?php echo $works; ?>">WORKS</a>
           </li>
           <li class="pc-nav__item">
-            <a href="#">COMPANY</a>
+            <a href="<?php echo $company; ?>">COMPANY</a>
           </li>
           <li class="pc-nav__item">
-            <a href="#">RECRUIT</a>
+            <a href="<?php echo $recruit; ?>">RECRUIT</a>
           </li>
           <li class="pc-nav__item">
-            <a href="#">CONTACT</a>
+            <a href="<?php echo $contact; ?>">CONTACT</a>
           </li>
         </ul>
       </nav>
