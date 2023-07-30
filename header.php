@@ -13,6 +13,7 @@
 </head>
 
 <?php
+$home = esc_url(home_url('/'));
 $news = esc_url(home_url('/news/'));
 $service = esc_url(home_url('/service/'));
 $works = esc_url(home_url('/works/'));
@@ -25,9 +26,19 @@ $contact = esc_url(home_url('/contact/'));
   <?php wp_body_open(); ?>
   <header class="l-header p-header">
     <div class="p-header__inner">
-      <h1 class="p-header__logo">
-        <a href="" class="p-header__logoLink">CodeUps</a>
-      </h1>
+      <?php if (is_front_page()) : ?>
+        <h1 class="p-header__logo">
+      <?php else : ?>
+        <h2 class="p-header__logo">
+      <?php endif; ?>
+        <a href="<?php echo $home; ?>" class="p-header__logoLink">CodeUps</a>
+      <?php if (is_front_page()) : ?>
+        </h1>
+      <?php else : ?>
+        </h2>
+      <?php endif; ?>
+
+
       <div class="p-header__drawer c-hamburger js-hamburger">
         <span></span>
         <span></span>
