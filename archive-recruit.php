@@ -48,35 +48,35 @@
                                 $text5 = SCF::get('text_5');
                                 $link = SCF::get('link');
                                 ?>
-                                <?php if ($text1):?>
-                                <div class="p-common-lists__list">
-                                    <dt>雇用形態</dt>
-                                    <dd><?php echo nl2br($text1); ?></dd>
-                                </div>
+                                <?php if ($text1) : ?>
+                                    <div class="p-common-lists__list">
+                                        <dt>雇用形態</dt>
+                                        <dd><?php echo nl2br($text1); ?></dd>
+                                    </div>
                                 <?php endif; ?>
-                                <?php if ($text2):?>
-                                <div class="p-common-lists__list">
-                                    <dt>給与</dt>
-                                    <dd><?php echo nl2br($text2); ?></dd>
-                                </div>
+                                <?php if ($text2) : ?>
+                                    <div class="p-common-lists__list">
+                                        <dt>給与</dt>
+                                        <dd><?php echo nl2br($text2); ?></dd>
+                                    </div>
                                 <?php endif; ?>
-                                <?php if ($text3):?>
-                                <div class="p-common-lists__list">
-                                    <dt>仕事内容</dt>
-                                    <dd><?php echo nl2br($text3); ?></dd>
-                                </div>
+                                <?php if ($text3) : ?>
+                                    <div class="p-common-lists__list">
+                                        <dt>仕事内容</dt>
+                                        <dd><?php echo nl2br($text3); ?></dd>
+                                    </div>
                                 <?php endif; ?>
-                                <?php if ($text4):?>
-                                <div class="p-common-lists__list">
-                                    <dt>勤務時間</dt>
-                                    <dd><?php echo nl2br($text4); ?></dd>
-                                </div>
+                                <?php if ($text4) : ?>
+                                    <div class="p-common-lists__list">
+                                        <dt>勤務時間</dt>
+                                        <dd><?php echo nl2br($text4); ?></dd>
+                                    </div>
                                 <?php endif; ?>
-                                <?php if ($text5):?>
-                                <div class="p-common-lists__list">
-                                    <dt>応募資格</dt>
-                                    <dd><?php echo nl2br($text5); ?></dd>
-                                </div>
+                                <?php if ($text5) : ?>
+                                    <div class="p-common-lists__list">
+                                        <dt>応募資格</dt>
+                                        <dd><?php echo nl2br($text5); ?></dd>
+                                    </div>
                                 <?php endif; ?>
                             </dl>
                             <div class="p-page-recruit__apply">
